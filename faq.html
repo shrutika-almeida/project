@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FAQs</title>
+        <link href="css/project-2.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- header section starts here -->
+        <header class="wrapper">
+                <nav class="nav">
+                    <div class="container">
+                       <a href="project-2.html"> <img src="images/logo1.jpg" height="60px" width="70px"></a>
+                        <ul>
+                               <li><a href="project-2.html">Home</a></li>
+                               <li><a href="faq.html">FAQ</a></li>
+                               <li><a href="contactus.html">Contact us</a>
+                                <i class="fa fa-caret-down"></i>
+                                   <ul>
+                                     <li><a href="#">Page 1</a></li>
+                                     <li><a href="#">Page 2</a></li>
+                                   </ul>
+                                </li>   
+                        </ul>
+                
+                    </div>
+               </nav>
+        </header>
+        <!-- header section ends here -->
+        <div class="container">
+            <h2>FAQs</h2>
+             <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Accordion 1</a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">Accordions support arbitrary markup,but each content panel
+                       must always be the next sibling after its associated header. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Accordion 2</a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">Each item can be "expanded" or "stretched" to reveal the 
+                      content associated with that item.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Accordion 3</a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">There can be zero expanded items, exactly one, 
+                      or more than one item expanded at a time, depending on the configuration.</div>
+                </div>
+              </div>
+              
+            </div> 
+          </div>
+
+        <!-- subfooter section starts here -->
+        <footer class="fixedfooter">
+                <div class="subfootwrap">
+                    <div id="div1">Copyright © 2018.All rights reserved</div>
+                    <div id="div2">
+                            <a href=""> <img src="images/facebook.png" id="subfooticon" class="hovericon"></a>
+                            <a href=""> <img src="images/tweet.png" id="subfooticon" class="hovericon"></a> 
+                            <a href=""> <img src="images/instagram.png" id="subfooticon" class="hovericon"></a> 
+                    </div>
+                </div>
+        </footer>
+        <!-- subfooter section ends here -->
+    </body>
+</html>

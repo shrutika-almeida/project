@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0; 
+        border: 0;
+        font-size: 100%;
+        font:inherit;
+        vertical-align: baseline;
+        font-family: sans-serif;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }    
+  /* Reset css ends here   */
+  /* header css starts here   */
+.wrapper
+{
+    width: 100%;
+    background-color:rgba(167, 166, 173, 0.58) ;
+    position: relative;
+        
+}
+.container
+{
+    margin: 0 auto;
+    width: 1024px;
+    position:relative;
+    /* background-color: burlywood; */
+}
+/* navbar css starts here */
+.nav 
+{ 
+    background:rgba(104, 101, 101, 0.959); 
+    /* float:right; */
+    width: 100%;
+}
+/* .nav img{
+    padding: 7px;
+    margin-left: 20px;
+} */
+.nav ul 
+{ 
+    position: relative;
+    padding: 0px;
+    margin: 0px; 
+    float: right;
+}
+.nav ul li 
+{ 
+    position: relative; 
+    display: block; 
+    float: left;
+    padding: 20px;
+}
+.nav ul li a          
+{ 
+    /* display:block;   */
+    color:rgb(0, 0, 0);
+    text-align:center; 
+    text-decoration:none; 
+    padding:8px 20px 9px 20px;
+}
+.nav ul li:hover ul            
+{ 
+    display:block;
+}
+.nav ul li ul                
+{ 
+    display:none; 
+    position:absolute; 
+    left:0; 
+    top:100%; 
+    background:#484848; 
+    z-index: 99; 
+}
+.nav ul li ul li            
+{ 
+    width:100%; 
+    float:left; 
+    display:block; 
+    background:none; 
+    padding:6px;
+}
+.nav ul li ul li a            
+{ 
+    text-align:left; 
+    padding:5px 4px;
+}
+.nav ul li ul li a:hover    
+{ 
+    background-color:rgba(49, 49, 49, 0.842);
+    padding:5px 4px;
+}
+.nav ul li a:hover
+{ 
+    background-color: #484848;
+}
+/* navbar css ends here */
+/* header css ends here */
+/* slider css starts here */
+.caption
+{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+.fade
+{   
+    animation-name: fade;
+    animation-duration: 0.5 s;
+}
+
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    padding: 15px;
+    top:50%;
+}
+.next
+{
+    right: 0;
+}
+.prev:hover, .next:hover 
+{
+    background-color: rgba(0,0,0,0.8);
+}
+/* slider css ends here */
+/* testimonial css starts here */
+.testimonial
+{
+    display: flex;
+    flex-direction: row;
+    line-height: 2;
+}
+.testimonial  div 
+{
+    margin:35px;
+    padding:10px;
+    font-size:20px;
+    width: 25%;
+} 
+.testimonial p
+{
+    font-size: 15px;
+}
+ /* testimonial css ends here */
+
+.foot-wrapper
+{
+    width: 100%;
+    background-color:rgba(46, 45, 53, 0.6); ;
+    position: relative;
+    margin-bottom: 52px;
+}
+.foot-container
+{
+    margin: 0 auto;
+    width: 1024px;
+    position:relative;
+    display: table;
+    /* background-color: burlywood; */
+}
+.width
+{
+    display: table-cell;
+    padding-left: 40px;
+}
+.width img
+{
+    padding-top: 20px;
+}
+.width a
+{
+    color: #000;
+}
+   
+.width a:hover
+{
+    color: #ff0000;
+}
+/* subfooter css starts here */
+.fixedfooter
+{
+    width: 100%;
+    background-color:rgba(104, 101, 101, 0.959);
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.subfootwrap
+{
+    margin: 0 auto;
+    width: 1024px;
+    position:relative;
+    /* background-color: rgba(104, 101, 101, 0.959); */
+    overflow: hidden;
+}
+
+footer div #div1
+{
+    float: left;
+    padding-left: 15px;
+}
+footer div #div2
+{
+    float: right;
+    padding-right: 15px;
+}
+#subfooticon
+{
+    height: 30px;
+    width: 30px;
+}
+.hovericon
+{  
+    background-color:#b3b3b3;
+}
+.hovericon:hover
+{   
+    background-color:#ff0000;
+}

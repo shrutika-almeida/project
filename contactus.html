@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Contact us</title>
+        <link href="css/project-2.css" type="text/css" rel="stylesheet">
+        <link href="css/contactus.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         <!-- header section starts here -->
+         <header class="wrapper">
+            <nav class="nav">
+                    <div class="container">
+                       <a href="project-2.html"> <img src="images/logo1.jpg" height="60px" width="70px"></a>
+                        <ul>
+                               <li><a href="project-2.html">Home</a></li>
+                               <li><a href="faq.html">FAQ</a></li>
+                               <li><a href="contactus.html">Contact us</a>
+                                <i class="fa fa-caret-down"></i>
+                                   <ul>
+                                     <li><a href="#">Page 1</a></li>
+                                     <li><a href="#">Page 2</a></li>
+                                   </ul>
+                                </li>   
+                        </ul>
+                
+                 </div>
+            </nav>
+        </header>
+        <!-- header section ends here -->
+    <div class="main-wrapper">
+        <section class="contact-wrapper">
+            <div class="contact-container">
+                <h2>Send us a message.</h2>
+                  
+                <form >
+                      <div class="div1">
+                        <input type="text" name="fname" placeholder="First name" required id="t1">
+                        <p id="t1"></p>
+                        <input type="text" name="lname" placeholder="Last name" required id="t1">
+                        <input type="email" name="ename" placeholder="Email" required>
+                      </div>
+                      <div class="div2">
+                        <input type="text" name="cname" placeholder="Company name"  required id="t1">
+                        <input type="text" name="jname" placeholder="Job title"  required id="t1">
+                       <select name="bname" id="s1">
+                          <option value="select business">select a business</option>
+                          <option value="Accounting">Accounting</option>
+                          <option value="Food and Beverage">Food and Beverage</option>
+                          <option value="Agriculture">Agriculture</option>
+                          <option value="Chemicals">Chemicals</option>
+                          <option value="Ecommerce">Ecommerce</option>
+                      </select>
+                      <select name="tname" id="s1">
+                          <option value="select a help topic">select topic</option>
+                          <option value="General Information">General Information</option>
+                          <option value="Get a demo">Get a demo</option>
+                          <option value="Partnerships">Partnerships</option>
+                          <option value="Career">Career</option>
+                      </select>
+                    </div>    
+                   
+                    <div class="div3">
+                        <textarea placeholder="write a message"></textarea>
+                   </div>
+                   <input type="submit" value="submit" onclick="textValidate()">
+                </form>
+            
+            </div>
+        </section>
+    </div>
+    
+        <!-- subfooter section starts here -->
+        <footer class="fixedfooter">
+                <div class="subfootwrap">
+                    <div id="div1">Copyright © 2018.All rights reserved</div>
+                    <div id="div2">
+                            <a href=""> <img src="images/facebook.png" id="subfooticon" class="hovericon"></a>
+                            <a href=""> <img src="images/tweet.png" id="subfooticon" class="hovericon"></a> 
+                            <a href=""> <img src="images/instagram.png" id="subfooticon" class="hovericon"></a> 
+                    </div>
+                </div>
+        </footer>
+        <!-- subfooter section ends here -->
+        <script src="javascript/project-2.js"></script>
+    </body>
+</html>
